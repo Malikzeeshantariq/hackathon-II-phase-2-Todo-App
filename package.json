@@ -1,5 +1,8 @@
 {
+  "name": "todo-app-monorepo",
+  "private": true,
+  "workspaces": ["frontend"],
   "dependencies": {
-    "@anthropic-ai/claude-code": "^2.1.1"
+    "next": "^16.0.0"
   }
 }
