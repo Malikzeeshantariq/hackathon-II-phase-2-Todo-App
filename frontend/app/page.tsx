@@ -2,6 +2,7 @@
  * T037: Landing page with auth redirects.
  *
  * Spec Reference: plan.md - Frontend Components
+ * Deployed via Vercel Git Integration
  */
 
 "use client"
