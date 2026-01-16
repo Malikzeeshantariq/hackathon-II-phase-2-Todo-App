@@ -70,14 +70,10 @@ export const auth = betterAuth({
 
   // Trust the host header for URL detection
   trustedOrigins: [
-    process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000",
-    "http://localhost:3000",
-    // Vercel domains - production
-    "https://frontend-zeeshan-tariqs-projects.vercel.app",
-    "https://frontend-eight-psi-iunua3v2s0.vercel.app",
-    // Allow all Vercel preview deployments for this project
-    /https:\/\/frontend-.*-zeeshan-tariqs-projects\.vercel\.app/,
-  ],
+  "http://localhost:3000",
+  "https://frontend-eight-psi-iunua3v2s0.vercel.app",
+  "/https:\/\/frontend-.*-zeeshan-tariqs-projects\.vercel\.app/",
+],
 })
 
 export type Session = typeof auth.$Infer.Session
